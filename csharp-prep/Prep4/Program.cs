@@ -24,5 +24,15 @@ class Program
         int average = sum / numbers.Count;
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is: {average}");
+
+        int max = numbers[0];
+        for (int i = 0; i< numbers.Count; i++)
+        {
+            if (numbers[i] > max)
+            {
+                max = numbers[i];
+            }
+        }
+        Console.WriteLine($"The largest number is: {max}");
     }
 }

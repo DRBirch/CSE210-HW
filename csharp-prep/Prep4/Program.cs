@@ -21,6 +21,8 @@ class Program
             Console.WriteLine(numbers[i]);
             sum = sum + numbers[i];
         }
+        int average = sum / numbers.Count;
         Console.WriteLine($"The sum is: {sum}");
+        Console.WriteLine($"The average is: {average}");
     }
 }

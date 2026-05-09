@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Reference reference = new Reference("Enos", 6, 7);
+        Scripture scripture = new Scripture(reference, 
+        "And I, Enos, knew that God could not lie; wherefor, my guilt was swept away;",
+        " And I said: Lord, how is it done?");
+
+        string input = "";
     }
 }

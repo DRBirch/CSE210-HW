@@ -4,7 +4,7 @@ public class Breathing : Activity
 {
     public Breathing() : base(
             "Breathing",
-            "This activity helps you relax through breathing.")
+            "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.")
     {
     }
 
@@ -12,9 +12,13 @@ public class Breathing : Activity
     {
         StartMessage();
 
-        Console.WriteLine("Breathe in...");
-        Console.WriteLine("Breathe out...");
-
+        for (int i = 0; i < _duration / 8; i++)
+        {
+            Console.Write("Breathe in...");
+            Countdown(4);
+            Console.WriteLine("Breathe out...");
+            Countdown(6);
+        }  
         EndMessage();
     }
 }

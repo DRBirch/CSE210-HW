@@ -8,7 +8,7 @@ class Program
         Console.WriteLine("2. Reflection");
         Console.WriteLine("3. Listing");
 
-        Console.Write("Choose an activity: ");
+        Console.Write("\nChoose an activity: ");
         string choice = Console.ReadLine();
 
         if (choice == "1")

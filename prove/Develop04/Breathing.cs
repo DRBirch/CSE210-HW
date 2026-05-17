@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Threading;
 
 public class Breathing : Activity
 {
@@ -12,7 +14,7 @@ public class Breathing : Activity
     {
         StartMessage();
 
-        for (int i = 0; i < _duration / 8; i++)
+        for (int i = 0; i < _duration / 10; i++)
         {
             Console.Write("Breathe in...");
             Countdown(4);

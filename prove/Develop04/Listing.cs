@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Threading;
 
 public class Listing : Activity
 {
@@ -27,6 +29,14 @@ public class Listing : Activity
         Console.WriteLine(prompt);
         Console.WriteLine("\nStart listing:");
         Countdown(4);
+
+        DateTime endTime = DateTime.Now.AddSeconds(_duration);
+        List<string> items = new List<string>();
+        while (DateTime.Now < endTime)
+        {
+            items.Add(Console.ReadLine());
+        }
+        Console.WriteLine($"Amount of responses for the prompt: {items.Count}");
 
         EndMessage();
     }

@@ -32,5 +32,50 @@ class Program
 
     Console.Write("Choose an option: ");
     int choice = int.Parse(Console.ReadLine());
+
+    if (choice == 1)
+        {
+            Console.WriteLine("Enter on or off: ");
+            string answer = Console.ReadLine();
+            if (answer == "on")
+            {
+                light.TurnOn();
+            }
+            else
+            {
+                light.TurnOff();
+            }
+        }
+    else if (choice == 2)
+        {
+            Console.WriteLine("Enter temperature: ");
+            int temp = int.Parse(Console.ReadLine());
+            thermostat.SetTemperature(temp);
+        }
+    else if (choice == 3)
+        {
+            Console.WriteLine("Lock or Unlock door? ");
+            string answer = Console.ReadLine();
+            if (answer == "Lock")
+            {
+                doorLock.LockDoor();
+            }
+            else
+            {
+                doorLock.UnlockDoor();
+            }
+        }
+    else if (choice == 4)
+        {
+            roomba.StartCleaning();
+        }
+    else if (choice == 5)
+        {
+            camera.StartRecording();
+        }
+    else if (choice == 7)
+        {
+            myHome.DisplayDevices();
+        }
     }
 }

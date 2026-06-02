@@ -9,6 +9,7 @@ public class Device
     {
         Console.WriteLine($"Device: {_name}");
         Console.WriteLine($"Status: {_status}");
+        Console.WriteLine();
     }
 
     public void TurnOn()

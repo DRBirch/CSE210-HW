@@ -16,4 +16,11 @@ public class Roomba : Device
     {
         _isCleaning = false;
     }
+
+    public override void DisplayStatus()
+{
+    Console.WriteLine($"Device: {_name}");
+    Console.WriteLine($"Cleaning: {_isCleaning}");
+    Console.WriteLine();
+}
 }

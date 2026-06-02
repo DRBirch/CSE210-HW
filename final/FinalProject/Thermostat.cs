@@ -12,4 +12,11 @@ public class Thermostat : Device
     {
         _temperature = temperature;
     }
+
+    public override void DisplayStatus()
+{
+    Console.WriteLine($"Device: {_name}");
+    Console.WriteLine($"Temperature: {_temperature}");
+    Console.WriteLine();
+}
 }

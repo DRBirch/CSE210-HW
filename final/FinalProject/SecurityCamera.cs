@@ -16,4 +16,11 @@ public class SecurityCamera : Device
     {
         _isRecording = false;
     }
+
+    public override void DisplayStatus()
+{
+    Console.WriteLine($"Device: {_name}");
+    Console.WriteLine($"Recording: {_isRecording}");
+    Console.WriteLine();
+}
 }

@@ -16,4 +16,11 @@ public class DoorLock : Device
     {
         _isLocked = false;
     }
+    
+    public override void DisplayStatus()
+{
+    Console.WriteLine($"Device: {_name}");
+    Console.WriteLine($"Locked: {_isLocked}");
+    Console.WriteLine();
+}
 }

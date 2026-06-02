@@ -16,4 +16,9 @@ public class Alarm : Device
     {
         _isActive = false;
     }
+    public override void DisplayStatus()
+    {
+        Console.WriteLine($"Device: {_name}");
+        Console.WriteLine($"Status: {_isActive}");
+    }
 }

@@ -12,4 +12,11 @@ public class Light : Device
     {
         _brightness = level;
     }
+
+    public override void DisplayStatus()
+{
+    Console.WriteLine($"Device: {_name}");
+    Console.WriteLine($"Brightness: {_brightness}");
+    Console.WriteLine();
+}
 }
